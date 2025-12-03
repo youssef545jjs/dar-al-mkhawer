@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>آراء العميلات – دار المخاوير</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/reviews.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+
+    <div class="brand">
+      <div class="brand-logo-wrap"><img src="assets/logo.png"></div>
+      <div class="brand-text">
+        <div class="brand-name">دار المخاوير</div>
+        <div class="brand-sub">آراء عميلاتنا</div>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">الرئيسية</a>
+      <a href="products.html" class="nav-link">المنتجات</a>
+      <a href="reviews.html" class="nav-link active">آراء العميلات</a>
+      <a href="contact.html" class="nav-link">تواصل معنا</a>
+    </nav>
+
+    <button class="nav-cta" onclick="openWhatsApp()">واتساب</button>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h1 class="section-title">ماذا قالت العميلات؟</h1>
+
+    <div id="reviewsBox" class="reviews-list"></div>
+
+    <div class="review-add">
+      <textarea id="rev" placeholder="اكتبي رأيك…" rows="3"></textarea>
+      <select id="rate">
+        <option value="5">⭐ ⭐ ⭐ ⭐ ⭐ ممتاز</option>
+        <option value="4">⭐ ⭐ ⭐ ⭐ رائع</option>
+        <option value="3">⭐ ⭐ ⭐ جيد</option>
+        <option value="2">⭐ ⭐ مقبول</option>
+        <option value="1">⭐ ضعيف</option>
+      </select>
+
+      <button class="magic-btn" onclick="addReview()">إرسال</button>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">© دار المخاوير</footer>
+
+</body>
+</html>
